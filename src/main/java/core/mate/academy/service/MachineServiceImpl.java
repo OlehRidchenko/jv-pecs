@@ -17,12 +17,10 @@ public class MachineServiceImpl implements MachineService<Machine> {
         if (type == Bulldozer.class) {
             BulldozerProducer bulldozer = new BulldozerProducer();
             finalList.addAll(bulldozer.get());
-        }
-        else if (type == Excavator.class) {
+        } else if (type == Excavator.class) {
             ExcavatorProducer excavator = new ExcavatorProducer();
             finalList.addAll(excavator.get());
-        }
-        else if (type == Truck.class) {
+        } else if (type == Truck.class) {
             TruckProducer truck = new TruckProducer();
             finalList.addAll(truck.get());
         }
